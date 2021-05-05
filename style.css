@@ -1,0 +1,22 @@
+.row{
+    
+    margin: 8%;
+
+}
+
+#totalconfirmed{
+    font-size:28px;
+    color:gray;
+}
+#deaths {
+    font-size:28px;
+    color: rgb(247, 75, 75);
+}
+#recovered {
+font-size:28px;
+color: rgba(44, 196, 44, 0.849);
+}
+#lastupdate {
+font-size:larger;
+color: rgb(110, 110, 110);
+}
