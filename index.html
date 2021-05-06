@@ -35,37 +35,38 @@
                         <a class="nav-link" href="country_index.html">View by country</a>
                     </li>
                 </ul>
-               
+
                     <input id="input_data" class="me-2" placeholder="Search for state">
-                    <button id="Search_btn" class="btn btn-outline-success">Search</button>
+                    <button id="Search_btn" class="btn btn-outline-success btn-sm">Search</button>
         
             </div>
         </div>
     </nav>
     
     <div class="row align-items-center" >
-        <div class="col">
+        <div class="col-sm">
             <h1>India</h1>
-            <h2>Coronavirus Cases: 
+            <h2 style="color: rgba(0, 0, 0, 0.55);">Coronavirus Cases: 
                 <br><span id="totalconfirmed"></span></h2>
-            <h2>Deaths:
+            <h2 style="color: rgba(0, 0, 0, 0.55);">Deaths:
                 <br><span id="deaths"></span></h2>
-            <h2>Recovered:
+            <h2 style="color: rgba(0, 0, 0, 0.55);">Recovered:
                 <br><span id="recovered"></span></h2>
-            <h6>Last updated:
-                <br><span id="lastupdate"></span></h6>
+            <h7 style="color: rgba(0, 0, 0, 0.55);">Last update:
+                <br><span id="lastupdate"></span></h7>
         </div>
         
-        <div class="col">  
+        <div class="col-sm">  
             <hr>
             <h1
-                style="background-color: aqua;padding: 8px; color: rgba(0, 0, 0, 0.712); border-radius: 5px; box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%), 0 4px 10px 0 rgb(0 0 0 / 50%);">
+                style="background-color: rgba(0, 255, 255, 0.897);padding: 8px; color: rgba(0, 0, 0, 0.712); border-radius: 5px; box-shadow: 0 2px 5px 0 rgb(0 0 0 / 20%);">
                 Today's state result</h1>
             
-            <h2 id="State_name" style="color:rgba(26, 25, 25, 0.678);"></h2>
-            <h3 id="cnfrm" style="color: orangered;"></h3>
-            <h3 id="total_death" style="color: cornflowerblue;"></h3>
-            <h3 id="total_rec" style="color: rgba(27, 224, 20, 0.76);"></h3>
+            <h2 id="State_name"></h2>
+            <h3 id="cnfrm" style="color: #00aaff;"></h3>
+            <h3 id="total_death" style="color: rgb(247, 75, 75);"></h3>
+            <h3 id="total_rec" style="color: rgba(44, 196, 44, 0.849);"></h3>
+            <h7 id="last_update" style="color: rgba(0, 0, 0, 0.55);"></h7>
     
         </div>
     </div>

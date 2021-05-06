@@ -27,6 +27,7 @@ window.onload = () => {
         cnfrm.innerText = `Confirmed cases: ${new_data[15].confirmed}`;
         total_death.innerText = `Total deaths: ${new_data[15].deaths}`;
         total_rec.innerText = `Total recovered: ${new_data[15].recovered}`;
+        last_update.innerText = `Last update: ${new_data[15].lastupdatedtime}`;
 
         Search_btn.onclick = function () {
             var x = input_data.value;
@@ -38,6 +39,7 @@ window.onload = () => {
                     cnfrm.innerText = `Confirmed cases: ${new_data[i].confirmed}`;
                     total_death.innerText = `Total deaths: ${new_data[i].deaths}`;
                     total_rec.innerText = `Total recovered: ${new_data[i].recovered}`;
+                    last_update.innerText = `Last update: ${new_data[i].lastupdatedtime}`;
                 }
             }
 

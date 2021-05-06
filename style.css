@@ -6,7 +6,7 @@
 
 #totalconfirmed{
     font-size:28px;
-    color:gray;
+    color:#00aaff;
 }
 #deaths {
     font-size:28px;
@@ -17,6 +17,7 @@ font-size:28px;
 color: rgba(44, 196, 44, 0.849);
 }
 #lastupdate {
-font-size:larger;
-color: rgb(110, 110, 110);
+font-size:small;
+color: #00008B;
+opacity: 0.9;
 }
