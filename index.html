@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#" style="color: rgb(255, 53, 53);">Covid-19 Live Status</a>
+            <a class="navbar-brand" href="#" style="color: rgb(255, 53, 53);"><b> Covid-19 Live Status</b></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -35,16 +35,17 @@
                         <a class="nav-link" href="country_index.html">View by country</a>
                     </li>
                 </ul>
-                <form class="d-flex">
-                    <input  id="search_state" class="form-control me-2" type="search" placeholder="Search for state" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+               
+                    <input id="input_data" class="me-2" placeholder="Search for state">
+                    <button id="Search_btn" class="btn btn-outline-success">Search</button>
+        
             </div>
         </div>
     </nav>
-    <div class="row align-items-center">
-        <div class="col" id="im">
-            <h1>INDIA</h1>
+    
+    <div class="row align-items-center" >
+        <div class="col" >
+            <h1>India</h1>
             <h2>Coronavirus Cases: 
                 <br><span id="totalconfirmed"></span></h2>
             <h2>Deaths:
@@ -54,9 +55,18 @@
             <h6>Last updated:
                 <br><span id="lastupdate"></span></h6>
         </div>
-        <div class="col">
-            <img style="width: 100%; opacity: 0.25;" src="cdc-k0KRNtqcjfw-unsplash.jpg" alt="">
+        
+        <div class="col">  
+            <hr>
+            <h1 style="background-color: aqua;padding: 8px; color: rgba(0, 0, 0, 0.712); border-radius: 5px;">Today's state result</h1>
+            
+            <h2 id="State_name" style="color:rgba(26, 25, 25, 0.678);"></h2>
+            <h3 id="cnfrm" style="color: orangered;"></h3>
+            <h3 id="total_death" style="color: cornflowerblue;"></h3>
+            <h3 id="total_rec" style="color: rgba(27, 224, 20, 0.76);"></h3>
+    
         </div>
     </div>
+    
 </body>
 </html>
