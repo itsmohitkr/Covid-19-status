@@ -41,6 +41,9 @@ window.onload = () => {
                     total_rec.innerText = `Total recovered: ${new_data[i].recovered}`;
                     last_update.innerText = `Last update: ${new_data[i].lastupdatedtime}`;
                 }
+                else {
+                    alert('Invalid state name 😛');
+                }
             }
 
         }

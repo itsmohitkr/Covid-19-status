@@ -1,23 +1,26 @@
-.row{
-    
+.row {
+
     margin: 8%;
 
 }
 
-#totalconfirmed{
-    font-size:28px;
-    color:#00aaff;
+#totalconfirmed {
+    font-size: 28px;
+    color: #00aaff;
 }
+
 #deaths {
-    font-size:28px;
+    font-size: 28px;
     color: rgb(247, 75, 75);
 }
+
 #recovered {
-font-size:28px;
-color: rgba(44, 196, 44, 0.849);
+    font-size: 28px;
+    color: rgba(44, 196, 44, 0.849);
 }
+
 #lastupdate {
-font-size:small;
-color: #00008B;
-opacity: 0.9;
+    font-size: small;
+    color: #00008B;
+    opacity: 0.9;
 }
