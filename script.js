@@ -3,8 +3,8 @@ window.onload = () => {
     let deaths = document.getElementById('deaths')
     let recovered = document.getElementById('recovered')
     let lastupdate = document.getElementById('lastupdate')
-   
-    
+
+
     fetch('https://api.covid19api.com/summary').then((apidata) => {
         // console.log(apidata);
         return apidata.json();
@@ -15,7 +15,7 @@ window.onload = () => {
         deaths.innerText = mydata.TotalDeaths;
         recovered.innerText = mydata.TotalRecovered;
         lastupdate.innerText = mydata.Date;
-        
+
         return fetch('https://api.covid19india.org/data.json');
     }).then((apidata_2) => {
         // console.log(apidata);
@@ -31,7 +31,7 @@ window.onload = () => {
 
         Search_btn.onclick = function () {
             var x = input_data.value;
-            var y= x.charAt(0).toUpperCase() + x.slice(1);
+            var y = x.charAt(0).toUpperCase() + x.slice(1);
             for (let i = 1; i < 38; i++) {
                 if (y == new_data[i].state) {
 
@@ -41,9 +41,7 @@ window.onload = () => {
                     total_rec.innerText = `Total recovered: ${new_data[i].recovered}`;
                     last_update.innerText = `Last update: ${new_data[i].lastupdatedtime}`;
                 }
-                else {
-                    alert('Invalid state name 😛');
-                }
+
             }
 
         }
@@ -51,4 +49,4 @@ window.onload = () => {
         console.log(`the error : ${error}`);
     })
 
-    }
+}
