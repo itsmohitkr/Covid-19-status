@@ -34,14 +34,12 @@ window.onload = () => {
             var y = x.charAt(0).toUpperCase() + x.slice(1);
             for (let i = 1; i < 38; i++) {
                 if (y == new_data[i].state) {
-
                     State_name.innerText = `${new_data[i].state} (india)`;
                     cnfrm.innerText = `Confirmed cases: ${new_data[i].confirmed}`;
                     total_death.innerText = `Total deaths: ${new_data[i].deaths}`;
                     total_rec.innerText = `Total recovered: ${new_data[i].recovered}`;
                     last_update.innerText = `Last update: ${new_data[i].lastupdatedtime}`;
                 }
-
             }
 
         }
