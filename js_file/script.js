@@ -27,13 +27,13 @@ window.onload = () => {
         State_name.innerText = `${new_data[5].state} (India)`;
 
         cnfrm.innerText = `${new_data[5].confirmed}`;
-        delta_confirmed.innerText = `(+ ${new_data[5].deltaconfirmed})`;
+        delta_confirmed.innerText = `(+${new_data[5].deltaconfirmed})`;
 
         total_death.innerText = `${new_data[5].deaths}`;
-        delta_death.innerText = `(+ ${new_data[5].deltadeaths})`;
+        delta_death.innerText = `(+${new_data[5].deltadeaths})`;
 
         total_rec.innerText = `${new_data[5].recovered}`;
-        delta_recovered.innerText = `(+ ${new_data[5].deltarecovered})`;
+        delta_recovered.innerText = `(+${new_data[5].deltarecovered})`;
 
         last_update.innerText = `Last update: ${new_data[5].lastupdatedtime}`;
 
@@ -45,13 +45,13 @@ window.onload = () => {
                     State_name.innerText = `${new_data[i].state} (india)`;
 
                     cnfrm.innerText = `${new_data[i].confirmed}`;
-                    delta_confirmed.innerText = `(+ ${new_data[i].deltaconfirmed})`;
+                    delta_confirmed.innerText = `(+${new_data[i].deltaconfirmed})`;
 
                     total_death.innerText = `${new_data[i].deaths}`;
-                    delta_death.innerText = `(+ ${new_data[i].deltadeaths})`;
+                    delta_death.innerText = `(+${new_data[i].deltadeaths})`;
 
                     total_rec.innerText = `${new_data[i].recovered}`;
-                    delta_recovered.innerText = `(+ ${new_data[i].deltarecovered})`;
+                    delta_recovered.innerText = `(+${new_data[i].deltarecovered})`;
 
                     last_update.innerText = `Last update: ${new_data[i].lastupdatedtime}`;
                 }
