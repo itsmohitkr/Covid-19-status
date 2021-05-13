@@ -18,16 +18,16 @@ window.onload = () => {
 
         return fetch('https://api.covid19india.org/data.json');
     }).then((apidata_2) => {
-        // console.log(apidata);
         return apidata_2.json();
     }).then((actual_data) => {
-
+        
+        // console.log(actual_data);
         const new_data = actual_data.statewise;
-        State_name.innerText = `${new_data[15].state} (India)`;
-        cnfrm.innerText = `Confirmed cases: ${new_data[15].confirmed}`;
-        total_death.innerText = `Total deaths: ${new_data[15].deaths}`;
-        total_rec.innerText = `Total recovered: ${new_data[15].recovered}`;
-        last_update.innerText = `Last update: ${new_data[15].lastupdatedtime}`;
+        State_name.innerText = `${new_data[5].state} (India)`;
+        cnfrm.innerText = `Confirmed cases: ${new_data[5].confirmed}`;
+        total_death.innerText = `Total deaths: ${new_data[5].deaths}`;
+        total_rec.innerText = `Total recovered: ${new_data[5].recovered}`;
+        last_update.innerText = `Last update: ${new_data[5].lastupdatedtime}`;
 
         Search_btn.onclick = function () {
             var x = input_data.value;
