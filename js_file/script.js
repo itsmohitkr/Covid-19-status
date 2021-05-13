@@ -23,10 +23,18 @@ window.onload = () => {
         
         // console.log(actual_data);
         const new_data = actual_data.statewise;
+
         State_name.innerText = `${new_data[5].state} (India)`;
-        cnfrm.innerText = `Confirmed cases: ${new_data[5].confirmed}`;
-        total_death.innerText = `Total deaths: ${new_data[5].deaths}`;
-        total_rec.innerText = `Total recovered: ${new_data[5].recovered}`;
+
+        cnfrm.innerText = `${new_data[5].confirmed}`;
+        delta_confirmed.innerText = `(+ ${new_data[5].deltaconfirmed})`;
+
+        total_death.innerText = `${new_data[5].deaths}`;
+        delta_death.innerText = `(+ ${new_data[5].deltadeaths})`;
+
+        total_rec.innerText = `${new_data[5].recovered}`;
+        delta_recovered.innerText = `(+ ${new_data[5].deltarecovered})`;
+
         last_update.innerText = `Last update: ${new_data[5].lastupdatedtime}`;
 
         Search_btn.onclick = function () {
@@ -35,9 +43,16 @@ window.onload = () => {
             for (let i = 1; i < 38; i++) {
                 if (y == new_data[i].state) {
                     State_name.innerText = `${new_data[i].state} (india)`;
-                    cnfrm.innerText = `Confirmed cases: ${new_data[i].confirmed}`;
-                    total_death.innerText = `Total deaths: ${new_data[i].deaths}`;
-                    total_rec.innerText = `Total recovered: ${new_data[i].recovered}`;
+
+                    cnfrm.innerText = `${new_data[i].confirmed}`;
+                    delta_confirmed.innerText = `(+ ${new_data[i].deltaconfirmed})`;
+
+                    total_death.innerText = `${new_data[i].deaths}`;
+                    delta_death.innerText = `(+ ${new_data[i].deltadeaths})`;
+
+                    total_rec.innerText = `${new_data[i].recovered}`;
+                    delta_recovered.innerText = `(+ ${new_data[i].deltarecovered})`;
+
                     last_update.innerText = `Last update: ${new_data[i].lastupdatedtime}`;
                 }
             }
